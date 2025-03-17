@@ -1,0 +1,11 @@
+{
+    "dependencies": {
+        "attach-uuid": "file:../../",
+        "uuid": "^11.1.0"
+    },
+    "name": "esm-tests",
+    "scripts": {
+        "test": "node esm-test-1.mjs"
+    },
+    "type": "module"
+}
