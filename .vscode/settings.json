@@ -1,0 +1,3 @@
+{
+    "window.title": "attach-uuid - ${activeRepositoryBranchName} - ${activeEditorShort}",
+}
