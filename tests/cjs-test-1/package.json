@@ -1,0 +1,11 @@
+{
+    "dependencies": {
+        "attach-uuid": "file:../../",
+        "uuid": "^11.1.0"
+    },
+    "name": "cjs-test-1",
+    "scripts": {
+        "test": "node cjs-test-1.cjs"
+    },
+    "type": "commonjs"
+}
