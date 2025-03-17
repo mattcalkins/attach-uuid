@@ -1,0 +1,41 @@
+{
+    "author": "Matt Calkins",
+    "bugs": {
+        "url": "https://github.com/mattcalkins/attach-uuid/issues"
+    },
+    "dependencies": {
+        "uuid": "^11.1.0"
+    },
+    "description": "Attaches a UUID to any object.",
+    "devDependencies": {
+        "esbuild": "^0.25.1",
+        "typescript": "^5.8.2",
+        "@types/node": "^22.13.10"
+    },
+    "exports": {
+        ".": {
+            "browser": "./dist/esm-browser/index.js",
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.js"
+        }
+    },
+    "homepage": "https://github.com/mattcalkins/attach-uuid#readme",
+    "license": "MIT",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "name": "attach-uuid",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mattcalkins/attach-uuid.git"
+    },
+    "scripts": {
+        "build:esm": "tsc --project tsconfig.esm.json",
+        "build:cjs": "tsc --project tsconfig.cjs.json",
+        "build:esm-browser": "node esbuild.config.mjs",
+        "build": "npm run build:esm && npm run build:cjs && npm run build:esm-browser",
+        "test": "npm run test:cjs-test-1 && npm run test:esm-test-1",
+        "test:cjs-test-1": "cd tests/cjs-test-1 && npm update && npm test",
+        "test:esm-test-1": "cd tests/esm-test-1 && npm update && npm test"
+    },
+    "version": "1.0.0"
+}
