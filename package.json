@@ -37,5 +37,5 @@
         "test:cjs-test-1": "cd tests/cjs-test-1 && npm update && npm test",
         "test:esm-test-1": "cd tests/esm-test-1 && npm update && npm test"
     },
-    "version": "1.0.0"
+    "version": "1.0.1"
 }
