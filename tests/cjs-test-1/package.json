@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "attach-uuid": "file:../../",
+        "attach-uuid": "file:../attach-uuid-package",
         "uuid": "^11.1.0"
     },
     "name": "cjs-test-1",
