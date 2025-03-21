@@ -1,3 +1,6 @@
 {
     "window.title": "attach-uuid - ${activeRepositoryBranchName} - ${activeEditorShort}",
+    "cSpell.words": [
+        "postbuild"
+    ],
 }
