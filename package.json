@@ -32,10 +32,10 @@
         "build:esm": "tsc --project tsconfig.esm.json",
         "build:cjs": "tsc --project tsconfig.cjs.json",
         "build:esm-browser": "node esbuild.config.mjs",
-        "build": "npm run build:esm && npm run build:cjs && npm run build:esm-browser",
-        "test": "npm run test:cjs-test-1 && npm run test:esm-test-1",
-        "test:cjs-test-1": "cd tests/cjs-test-1 && npm update && npm test",
-        "test:esm-test-1": "cd tests/esm-test-1 && npm update && npm test"
+        "build": "npm run build:esm && npm run build:cjs && npm run build:esm-browser && npm run postbuild:cjs",
+        "postbuild:cjs": "echo '{\"type\": \"commonjs\"}' > dist/cjs/package.json",
+        "test": "./test.sh"
     },
-    "version": "1.0.1"
+    "type": "module",
+    "version": "1.0.2"
 }
